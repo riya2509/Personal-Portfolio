@@ -3,6 +3,8 @@ import Particle from "../Particle";
 import Lottie from "react-lottie";
 import animationData from "../../assets/Animation - 1702628700350.json";
 import Type from "./Type";
+import About from "../About/About";
+
 function Home() {
   const defaultOptions = {
     loop: true,
@@ -38,11 +40,12 @@ function Home() {
             </h1>
           </Col>
 
-          <Col md={5} style={{ paddingBottom: 500 }}>
+          <Col md={5} style={{ paddingTop: 60 }}>
             <Lottie options={defaultOptions} />
           </Col>
         </Row>
       </Container>
+      <About />
     </div>
   );
 }
