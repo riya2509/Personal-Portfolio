@@ -13,6 +13,7 @@ import {
 import { CgFileDocument } from "react-icons/cg";
 import Button from "react-bootstrap/Button";
 import { CgGitFork } from "react-icons/cg";
+import { Link } from "react-router-dom";
 
 const PushEnd = styled.div`
   display: flex;
@@ -34,25 +35,25 @@ function NavBar() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <PushEnd>
-              <Nav.Link href="/home">
+              <Nav.Link as={Link} to="/">
                 <AiOutlineHome
                   style={{ marginBottom: "2px", marginRight: "4px" }}
                 />
                 Home
               </Nav.Link>
-              <Nav.Link href="/about">
+              <Nav.Link as={Link} to="/about">
                 <AiOutlineUser
                   style={{ marginBottom: "2px", marginRight: "4px" }}
                 />
                 About
               </Nav.Link>
-              <Nav.Link href="/project">
+              <Nav.Link as={Link} to="/project">
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px", marginRight: "4px" }}
                 />
                 Projects
               </Nav.Link>
-              <Nav.Link href="/resume">
+              <Nav.Link as={Link} to="/resume">
                 <CgFileDocument
                   style={{ marginBottom: "2px", marginRight: "4px" }}
                 />
