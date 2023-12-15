@@ -1,17 +1,17 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
-// import Lottie from "react-lottie";
-// import animationData from "../../assets/Animation - 1702628700350.json";
+import Lottie from "react-lottie";
+import animationData from "../../assets/Animation - 1702628700350.json";
 import Type from "./Type";
 function Home() {
-  // const defaultOptions = {
-  //   loop: true,
-  //   autoplay: true,
-  //   animationData,
-  //   rendererSettings: {
-  //     preserveAspectRatio: "xMidYMid slice",
-  //   },
-  // };
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
   return (
     <div>
       <Particle />
@@ -39,7 +39,7 @@ function Home() {
           </Col>
 
           <Col md={5} style={{ paddingBottom: 500 }}>
-            {/* <Lottie options={defaultOptions} /> */}
+            <Lottie options={defaultOptions} />
           </Col>
         </Row>
       </Container>
