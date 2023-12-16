@@ -1,19 +1,19 @@
 import Lottie from "react-lottie";
-import animationDataAbout from "../../assets/Animation - 1702628700350.json";
+import animationDataAbout from "../../assets/AboutAnimation.json";
 import { Col, Container, Row } from "react-bootstrap";
 function AboutCard() {
   const defaultOptions = {
     loop: true,
     autoplay: true,
-    animationDataAbout,
+    animationData: animationDataAbout,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },
   };
   return (
-    <Container style={{ marginTop: "20px" }}>
+    <Container>
       <Row>
-        <Col>
+        <Col style={{ marginTop: "20px" }}>
           <div>
             Hi everyone, I am <strong>Riya Gupta</strong> from Jamshedpur,
             Jharkhand.
@@ -53,7 +53,7 @@ function AboutCard() {
             organization where I can have a greater impact.
           </div>
         </Col>
-        <Col>
+        <Col md={5}>
           <Lottie options={defaultOptions} />
         </Col>
       </Row>
