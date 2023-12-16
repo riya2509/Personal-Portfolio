@@ -1,7 +1,6 @@
 // import React from "react";
 import NavBar from "./Components/Navbar";
 import Home from "./Components/Home/Home";
-// import Background from "./Components/Home/Background";
 import {
   BrowserRouter as Router,
   Route,
@@ -13,7 +12,6 @@ import "./App.css";
 function App() {
   return (
     <div>
-      {/* <Background /> */}
       <Router>
         <NavBar />
         <Routes>
