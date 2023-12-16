@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import Particle from "../Particle";
+// import Particle from "../Particle";
 import Lottie from "react-lottie";
 import animationData from "../../assets/Animation - 1702628700350.json";
 import Type from "./Type";
@@ -15,11 +15,10 @@ function Home() {
     },
   };
   return (
-    <div>
-      <Particle />
+    <div id="videobackground">
       <Container>
         <Row>
-          <Col md={7} style={{ marginTop: "80px" }}>
+          <Col md={7} style={{ marginTop: "80px", color: "white" }}>
             <h1
               style={{
                 marginTop: "100px",

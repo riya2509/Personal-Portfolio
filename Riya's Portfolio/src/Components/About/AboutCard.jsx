@@ -13,7 +13,7 @@ function AboutCard() {
   return (
     <Container>
       <Row>
-        <Col style={{ marginTop: "20px" }}>
+        <Col style={{ marginTop: "20px", color: "white" }}>
           <div>
             Hi everyone, I am <strong>Riya Gupta</strong> from Jamshedpur,
             Jharkhand.

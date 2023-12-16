@@ -11,7 +11,7 @@ function About() {
         }}
       >
         <Row>
-          <Col>
+          <Col style={{ color: "white" }}>
             <h1>
               Know Who<strong> I&apos;M</strong>
             </h1>
