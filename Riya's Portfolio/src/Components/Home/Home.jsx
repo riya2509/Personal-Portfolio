@@ -19,7 +19,7 @@ function Home() {
       <Particle />
       <Container>
         <Row>
-          <Col md={7}>
+          <Col md={7} style={{ marginTop: "80px" }}>
             <h1
               style={{
                 marginTop: "100px",
@@ -31,10 +31,11 @@ function Home() {
               <span className="wave" role="img" aria-labelledby="wave">
                 👋🏼
               </span>
-              <h1>
+              <br />
+              <span>
                 I&apos;M {""}
                 <strong>RIYA GUPTA</strong>
-              </h1>
+              </span>
               <div style={{ padding: 30, textAlign: "left" }}></div>
               <Type />
             </h1>
