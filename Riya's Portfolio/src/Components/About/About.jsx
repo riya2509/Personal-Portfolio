@@ -3,7 +3,7 @@ import AboutCard from "./AboutCard";
 
 function About() {
   return (
-    <div>
+    <div id="about-section">
       <Container
         style={{
           display: "flex",

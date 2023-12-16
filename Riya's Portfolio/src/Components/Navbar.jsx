@@ -12,9 +12,12 @@ import {
 import { CgFileDocument } from "react-icons/cg";
 import Button from "react-bootstrap/Button";
 import { CgGitFork } from "react-icons/cg";
-import { Link } from "react-router-dom";
 
 function NavBar() {
+  const handleScroll = (name) => {
+    const scroll = document.getElementById(name);
+    scroll?.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <>
       <Navbar
@@ -32,7 +35,11 @@ function NavBar() {
             className="justify-content-end"
           > */}
           {/* <Nav className="me-auto"/> */}
-          <Nav.Link as={Link} to="/" style={{ color: "white", margin: "10px" }}>
+          <Nav.Link
+            href="/"
+            style={{ color: "white", margin: "10px" }}
+            onClick={() => handleScroll("home-sction")}
+          >
             <AiOutlineHome
               style={{
                 marginBottom: "2px",
@@ -41,7 +48,10 @@ function NavBar() {
             />
             Home
           </Nav.Link>
-          <Nav.Link style={{ color: "white", margin: "10px" }}>
+          <Nav.Link
+            style={{ color: "white", margin: "10px" }}
+            onClick={() => handleScroll("about-section")}
+          >
             <AiOutlineUser
               style={{
                 marginBottom: "2px",
