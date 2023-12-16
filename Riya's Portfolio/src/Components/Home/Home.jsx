@@ -15,7 +15,7 @@ function Home() {
     },
   };
   return (
-    <div id="videobackground">
+    <div id="home-sction">
       <Container>
         <Row>
           <Col md={7} style={{ marginTop: "80px", color: "white" }}>
