@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-// import Particle from "../Particle";
+// import Particle2 from "../Particle2";
 import Lottie from "react-lottie";
 import animationData from "../../assets/Animation - 1702628700350.json";
 import Type from "./Type";
@@ -27,7 +27,7 @@ function Home() {
               }}
             >
               Hi There! {""}
-              <span className="wave" role="img" aria-labelledby="wave">
+              <span className="wave" role="img">
                 👋🏼
               </span>
               <br />
