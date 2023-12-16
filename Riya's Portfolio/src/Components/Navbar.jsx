@@ -28,7 +28,14 @@ function NavBar() {
         className="bg-body-tertiary"
       >
         <Container>
-          <Navbar.Brand href="/">RG.</Navbar.Brand>
+          <Navbar.Brand
+            onClick={() =>
+              window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
+            }
+            style={{ cursor: "pointer" }}
+          >
+            RG.
+          </Navbar.Brand>
           {/* <Navbar.Toggle aria-controls="responsive-navbar-nav" /> */}
           {/* <Navbar.Collapse
             id="basic-navbar-nav"
@@ -36,7 +43,6 @@ function NavBar() {
           > */}
           {/* <Nav className="me-auto"/> */}
           <Nav.Link
-            href="/"
             style={{ color: "white", margin: "10px" }}
             onClick={() => handleScroll("home-sction")}
           >
