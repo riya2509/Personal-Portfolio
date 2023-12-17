@@ -1,5 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
 import AboutCard from "./AboutCard";
+import ProfessionalSkillset from "./ProfessionalSkillset";
 
 function About() {
   return (
@@ -19,6 +20,7 @@ function About() {
         </Row>
       </Container>
       <AboutCard />
+      <ProfessionalSkillset />
     </div>
   );
 }
