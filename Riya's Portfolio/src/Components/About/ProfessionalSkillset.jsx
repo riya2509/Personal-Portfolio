@@ -18,6 +18,7 @@ function ProfessionalSkillset() {
         <Row></Row>
       </Container>
     </div>
+    // Adding skill set
   );
 }
 
